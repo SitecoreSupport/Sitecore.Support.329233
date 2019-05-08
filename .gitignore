@@ -1,0 +1,7 @@
+src/.vs/
+src/packages/
+src/Sitecore.Support.329233/bin/
+src/Sitecore.Support.329233/obj/
+*.pubxml
+*.user
+*.suo
