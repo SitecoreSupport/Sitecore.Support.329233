@@ -65,8 +65,8 @@
       <HintPath>..\packages\SXA90.Sitecore.XA.Foundation.Common.1.7.1\lib\Sitecore.XA.Foundation.Common.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.XA.Foundation.Multisite, Version=3.8.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SXA90.Sitecore.XA.Foundation.Multisite.1.8.0\lib\Sitecore.XA.Foundation.Multisite.dll</HintPath>
+    <Reference Include="Sitecore.XA.Foundation.Multisite, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SXA90.Sitecore.XA.Foundation.Multisite.1.7.1\lib\Sitecore.XA.Foundation.Multisite.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
