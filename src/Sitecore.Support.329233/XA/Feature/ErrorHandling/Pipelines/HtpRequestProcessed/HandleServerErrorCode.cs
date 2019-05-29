@@ -29,7 +29,9 @@ namespace Sitecore.Support.XA.Feature.ErrorHandling.Pipelines.HtpRequestProcesse
       if (args.Context.Error != null && !Context.Site.Name.Equals("shell"))
       {
 
-        if (args.Context.Error is HttpException error)
+        if (args.Context.Error is HttpException)
+        {
+          HttpException error = args.Context.Error as HttpException;
           if (error.GetHttpCode() == 404)
           {
             var settingsItem = ServiceLocator.ServiceProvider.GetService<IMultisiteContext>().GetSettingsItem(Context.Database.GetItem(Context.Site.StartPath));
@@ -46,6 +48,7 @@ namespace Sitecore.Support.XA.Feature.ErrorHandling.Pipelines.HtpRequestProcesse
               args.AbortPipeline();
             }
           }
+        }
 
         var siteInfos = GetPossibleSites();
         var site = SiteInfoResolver.ResolveSiteFromRequest(siteInfos, new HttpRequestWrapper(args.Context.Request));
